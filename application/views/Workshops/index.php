@@ -24,7 +24,9 @@
                                 <p class="card-text"><strong>Organizer:</strong> <?php echo $workshop['first_name_org']; ?></p> <!-- Organizer name -->
                             </div>
                             <div class="text-center mt-2">
-                                <a href="<?php echo site_url('workshops/details/' . $workshop['id_work']); ?>" class="btn btn-outline-success">Details</a>
+                            <a href="<?php echo site_url('workshops/details/' . $workshop['id_work']); ?>" class="btn btn-outline-success">Details</a>
+                            
+
                                 <br><br>
                             </div>
                         </div>
