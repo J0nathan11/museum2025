@@ -26,7 +26,6 @@
                             <div class="text-center mt-2">
                             <a href="<?php echo site_url('workshops/details/' . $workshop['id_work']); ?>" class="btn btn-outline-success">Details</a>
                             
-
                                 <br><br>
                             </div>
                         </div>

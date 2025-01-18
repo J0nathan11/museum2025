@@ -23,6 +23,8 @@
         </div>
     </div>
     <div class="text-center mt-4">
+    <a href="<?php echo site_url('register_workshop/index/' . $workshop['id_work']); ?>" class="btn btn-outline-success">Registration</a>
+
     <a href="javascript:history.back();" class="btn btn-outline-secondary">Go Back</a>
 </div>
 
