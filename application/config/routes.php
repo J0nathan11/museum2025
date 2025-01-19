@@ -62,4 +62,10 @@ $route['listworkshopscontroller'] = 'listworkshopscontroller/index';  // Ruta pa
 $route['list_workshops'] = 'ListWorkshops';
 
 
+$route['edit_workshop/edit/(:num)'] = 'editworkshopcontroller/edit/$1';
+$route['edit_workshop/update/(:num)'] = 'editworkshopcontroller/update/$1';
+
+
+
+
 
