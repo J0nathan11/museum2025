@@ -40,10 +40,8 @@
                         <td><?php echo $workshop['fk_id_org']; ?></td>
                         <td>
                             <!-- Botón de editar -->
-                            <a href="<?php echo site_url('edit_workshop/edit/' . $workshop['id_work']); ?>" 
-                               class="btn btn-outline-warning">
-                                Edit
-                            </a>
+                            <a href="<?php echo site_url('EditWorkshopController/edit/' . $workshop['id_work']); ?>" class="btn btn-outline-primary">Edit</a>
+
                             <!-- Botón de eliminar (si lo necesitas) -->
                             <a href="<?php echo site_url('workshop/delete/' . $workshop['id_work']); ?>" 
                                class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this workshop?');">

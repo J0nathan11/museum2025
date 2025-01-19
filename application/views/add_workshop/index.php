@@ -106,6 +106,9 @@
                 status_work: {
                     required: true,
                 },
+                fk_id_org: {
+                    required: true,
+                },
                 description_detail: {
                     required: true,
                 }
@@ -122,6 +125,9 @@
                 },
                 status_work: {
                     required: "Select state",
+                },
+                fk_id_org: {
+                    required: "Select organizer"
                 },
                 description_detail: {
                     required: "Please enter the description",

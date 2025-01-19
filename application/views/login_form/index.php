@@ -21,7 +21,7 @@
             <?php endif; ?>
 
             <!-- Formulario de login -->
-            <form action="<?php echo site_url('logincontroller/validate'); ?>" method="POST">
+            <form action="<?php echo site_url('logincontroller/validate'); ?>" method="POST" id="frm_login">
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="text" class="form-control" id="username" name="username" required>
@@ -44,3 +44,41 @@
 </body>
 </html>
 <br><br>
+
+<!-- jQuery and jQuery Validation -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Form validation
+        $("#frm_login").validate({
+            rules: {
+                username: {
+                    required: true,
+                },
+                password: {
+                    required: true,
+                }
+            },
+            messages: {
+                username: {
+                    required: "Please enter the username",
+                },
+                password: {
+                    required: "Please enter the password",
+                },
+            },
+            errorElement: 'div',
+            errorPlacement: function(error, element) {
+                error.addClass('error');
+                error.insertAfter(element);
+            }
+        });
+    });
+</script>
+<style>
+    .error {
+        color: red;
+        font-size: 0.875rem;
+    }
+</style>
