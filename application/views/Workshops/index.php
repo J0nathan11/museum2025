@@ -10,6 +10,10 @@
     <div class="container mt-5">
         <h2 style="text-align: center;">Workshops</h2>
         <hr>
+        <div class="text-center">
+        <a href="<?php echo site_url('check_registrations/index'); ?>" class="btn btn-outline-primary">Check Registrations</a>
+        </div>
+        <hr>
         <div class="row">
             <?php if (!empty($workshops)): ?>
                 <?php foreach ($workshops as $workshop): ?>
