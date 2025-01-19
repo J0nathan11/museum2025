@@ -56,4 +56,10 @@ $route['translate_uri_dashes'] = FALSE;
 $route['register_workshop/index/(:num)'] = 'Register_workshop/index/$1';
 $route['register_workshop/register/(:num)'] = 'Register_workshop/register/$1';
 
+$route['logincontroller'] = 'logincontroller/index';  // Ruta para la página de login
+$route['logincontroller/validate'] = 'logincontroller/validate';  // Ruta para validar el login
+$route['listworkshopscontroller'] = 'listworkshopscontroller/index';  // Ruta para la página de talleres
+$route['list_workshops'] = 'ListWorkshops';
+
+
 

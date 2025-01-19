@@ -61,8 +61,8 @@
             <a href="<?php echo site_url(); ?>/" class="text-decoration-none">Home</a>
             <a href="<?php echo site_url(); ?>/Clients/index" class="text-decoration-none">Register</a>
             <a href="<?php echo site_url(); ?>/Workshops/index" class="text-decoration-none">Workshops</a>
-            <a href="#historia" class="text-decoration-none">Historia</a>
-            <a href="#contacto" class="text-decoration-none">Contacto</a>
+            <a href="<?php echo site_url('logincontroller'); ?>" class="text-decoration-none">Login</a>
+
         </nav>
     </header>
 </body>
